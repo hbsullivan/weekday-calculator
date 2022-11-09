@@ -11,10 +11,6 @@ describe ('WeekDayCalc', ()=> {
     expect(weekday).toBeInstanceOf(WeekDayCalc);
   });
 
-  test('should be able to return current date', ()=> {
-    expect(weekday.now()).toEqual(Date.now());
-  })
-
   test('should be able to return current date in a readable format', () => {
     expect(weekday.toString()).toEqual(Date().toString());
   })
