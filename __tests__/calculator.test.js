@@ -14,6 +14,10 @@ describe ('WeekDayCalc', ()=> {
   test('should be able to return current date in a readable format', () => {
     expect(weekday.toString()).toEqual(Date().toString());
   })
+
+  test('should be able to return the day of the week of the inputted date', () => {
+    expect(weekday.getDay()).toEqual("wednesday");
+  })
 });
 
 
