@@ -8,7 +8,7 @@ describe ('WeekDayCalc', ()=> {
   });
 
   test('it should be able to create a date object', () => {
-    expect(weekday).toBeInstanceOf(WeekDayCalc);
+    expect(weekday).toEqual(new Date(2022,10,9));
   });
 
   test('should be able to return current date in a readable format', () => {
@@ -17,7 +17,20 @@ describe ('WeekDayCalc', ()=> {
   });
 
   test('should be able to return the day of the week of the inputted date', () => {
+    weekday = new WeekDayCalc(2022,10,6);
+    expect(weekday.getDayName()).toEqual("sunday");
+    weekday = new WeekDayCalc(2022,10,7);
+    expect(weekday.getDayName()).toEqual("monday");
+    weekday = new WeekDayCalc(2022,10,8);
+    expect(weekday.getDayName()).toEqual("tuesday");
+    weekday = new WeekDayCalc(2022,10,9);
     expect(weekday.getDayName()).toEqual("wednesday");
+    weekday = new WeekDayCalc(2022,10,10);
+    expect(weekday.getDayName()).toEqual("thursday");
+    weekday = new WeekDayCalc(2022,10,11);
+    expect(weekday.getDayName()).toEqual("friday");
+    weekday = new WeekDayCalc(2022,10,12);
+    expect(weekday.getDayName()).toEqual("saturday");
   });
 });
 
