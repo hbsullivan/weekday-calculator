@@ -1,26 +1,30 @@
-# NAME
+# Weekday Calculator
 
 #### By Henry Sullivan, Jennifer Holcomb, Vera Weikel, Yodel Guanzon
 
-#### An NAME app
+#### A Weekday Calculator app
 
 ## Technologies Used
 
 * HTML 
 * CSS 
 * Javascript
+* Webpack
+* Babel
+* esLint
+* npm
+* Jest
+* Bootstrap
 
 ## Description
-Test driven development. 
+Test driven development, the JavaScript Date object, classes and Jest. 
 
 ### Objectives 
 
-To create an app with npm and unit tests with Jest.
+Create an app for calculating the day for any given date. 
 
 ### Goals
-* Use of npm to manage packages, webpack to bundle code, and ESLint to lint code. If you are installing and configuring these dependencies from scratch, make sure to create your .gitignore first!
-* Complete unit tests for all business logic using TDD and Jest. Aim for 100% test coverage.
-* Complete separation of logic (UI logic in one file, business logic in another). You may even need to refactor some of your logic to make it more testable! If you aren't able to test UI logic, consider ways that logic could be refactored and moved into your business logic file.
+The user should be able to enter in a date and see what day of the week that date occurred on.
 
 ## Setup/Installation Requirements
 

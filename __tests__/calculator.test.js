@@ -4,11 +4,11 @@ describe ('WeekDayCalc', ()=> {
   let weekday;
 
   beforeEach(() => {
-    weekday = new Weekday();
+    weekday = new WeekDayCalc();
   });
 
   test('it should be able to create a date object', () => {
-    expect(weekday).toBeInstaceOf(Date);
+    expect(weekday).toBeInstanceOf(WeekDayCalc);
   });
 });
 
