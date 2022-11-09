@@ -4,7 +4,7 @@ describe ('WeekDayCalc', ()=> {
   let weekday;
 
   beforeEach(() => {
-    weekday = new WeekDayCalc();
+    weekday = new WeekDayCalc(2022,10,9);
   });
 
   test('it should be able to create a date object', () => {
@@ -12,12 +12,13 @@ describe ('WeekDayCalc', ()=> {
   });
 
   test('should be able to return current date in a readable format', () => {
-    expect(weekday.toString()).toEqual(Date().toString());
-  })
+    let date = new Date(2022,10,9);
+    expect(weekday.toDateString()).toEqual(date.toDateString());
+  });
 
   test('should be able to return the day of the week of the inputted date', () => {
-    expect(weekday.getDay()).toEqual("wednesday");
-  })
+    expect(weekday.getDayName()).toEqual("wednesday");
+  });
 });
 
 
