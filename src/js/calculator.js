@@ -4,17 +4,17 @@ export default class WeekDayCalc extends Date {
     if(this.getDay() === 0){
       return "sunday";
     }else if(this.getDay() ===1){
-      return "monday"
+      return "monday";
     }else if(this.getDay() ===2){
-      return "tuesday"
+      return "tuesday";
     }else if(this.getDay() ===3){
-      return "wednesday"
+      return "wednesday";
     }else if(this.getDay() ===4){
-      return "thursday"
+      return "thursday";
     }else if(this.getDay() ===5){
-      return "friday"
+      return "friday";
     }else {
-      return "saturday"
+      return "saturday";
     }
   }
 }
