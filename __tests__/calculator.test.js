@@ -10,6 +10,10 @@ describe ('WeekDayCalc', ()=> {
   test('it should be able to create a date object', () => {
     expect(weekday).toBeInstanceOf(WeekDayCalc);
   });
+
+  test('should be able to return current date', ()=> {
+    expect(weekday.now()).toEqual(Date.now());
+  })
 });
 
 
